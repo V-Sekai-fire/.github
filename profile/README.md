@@ -12,7 +12,7 @@ V-Sekai Fire & Game Development Tools
 | [Godot Task Goal Planner](https://github.com/V-Sekai/godot-task-goal-planner) | Classical AI goal and task management system for Godot.                                                      |
 | [IREE.gd](https://github.com/RechieKho/IREE.gd)                             | Godot integration with IREE for on-device machine learning.                                        |
 | [Godot Splerger](https://github.com/V-Sekai/godot-splerger)                 | Mesh splitting tool for Godot engine.                                                    |
-| [Godot Snappy](https://github.com/jgillich/godot-snappy)                    | A Snappy compression library integration for Godot.                                                |
+| [Godot Snappy](https://github.com/jgillich/godot-snappy)                    | A vertex snapping addon for Godot.                                                |
 | [Lasso](https://github.com/V-Sekai/lasso)                                   | Lasso tool for selecting assets within Godot.                                         |
 | [Hydro](https://github.com/godot-extended-libraries/hydro)                  | Extended libraries for water and fluid simulation in Godot.                                        |
 | [Godot Sandbox](https://github.com/libriscv/godot-sandbox)                  | Sandbox environment for experimenting with Godot and RISC-V architecture.                          |
