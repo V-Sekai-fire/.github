@@ -2,7 +2,7 @@ Notable Game Development Tools
 
 | Tool Name                                 | Description                                                                                       |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [V-Sekai Manuals](https://github.com/V-Sekai/manuals)                       | Manuals and guides for working with V-Sekai development tools.                                    |
+| [V-Sekai Manuals](https://github.com/V-Sekai/manuals)                       | Manuals and guides for working with V-Sekai.                                    |
 | [Blender Game Tools](https://github.com/V-Sekai/V-Sekai.blender-game-tools)  | Blender tools for V-Sekai game development workflow.                                               |
 | [Unidot Importer](https://github.com/V-Sekai/unidot_importer)                | Tool for importing assets into Godot from Unity/Blender.                                           |
 | [Godot VRM](https://github.com/V-Sekai/godot-vrm)                           | VRM support for Godot Engine.                                              |
