@@ -16,5 +16,5 @@
 | [Lasso](https://github.com/V-Sekai/lasso)                                   | Lasso tool for selecting assets within Godot.                                         |
 | [Hydro](https://github.com/godot-extended-libraries/hydro)                  | Extended libraries for water and fluid simulation in Godot.                                        |
 | [Godot Sandbox](https://github.com/libriscv/godot-sandbox)                  | Sandbox environment for experimenting with Godot and RISC-V architecture.                          |
-| [Quadwild BIMDF](https://github.com/cgg-bern/quadwild-bimdf)                | Quadwild adaptive mesh generation tool for Godot.                                                  |
+| [Quadwild BIMDF](https://github.com/V-Sekai/TOOL_quad_mesh_generator)                | Quadwild adaptive mesh generation tool for Godot.                                                  |
 | [Differentiable Cloth](https://github.com/fire/differentiable_cloth)        | A tool for simulating and working with cloth materials in a differentiable simulation.                 |
