@@ -2,6 +2,7 @@
 
 | Tool Name | Description |
 | :---- | :---- |
+| [V-Sekai Godot](https://github.com/V-Sekai/godot/) | The V-Sekai maintained branch of Godot Engine |
 | [V-Sekai Manuals](https://github.com/V-Sekai/manuals) | Comprehensive manuals and guides for developing with and contributing to V-Sekai. |
 | [V-Sekai Blender Game Tools](https://github.com/V-Sekai/V-Sekai.blender-game-tools) | A suite of Blender add-ons and utilities tailored for the V-Sekai game development workflow. |
 | [Unidot Importer](https://github.com/V-Sekai/unidot_importer) | Godot Engine tool for importing assets and scenes from Unity Engine projects and Blender files. |
