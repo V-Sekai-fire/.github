@@ -17,3 +17,4 @@
 | [Godot Sandbox](https://github.com/libriscv/godot-sandbox) | A sandboxed environment for Godot Engine, facilitating experimentation with RISC-V architecture integration. |
 | [Quadwild BIMDF (TOOL\_quad\_mesh\_generator)](https://github.com/V-Sekai/TOOL_quad_mesh_generator) | An adaptive quad mesh generation tool for Godot, based on the Quadwild algorithm with BIMDF. |
 | [Differentiable Cloth](https://github.com/fire/differentiable_cloth) | Simulation tool for cloth materials within a differentiable programming paradigm, enabling advanced physics. |
+| [Godot Cage Deformer](https://github.com/V-Sekai-fire/TOOL_godot_cage_deformer) | A cage deformer add-on for Godot Engine. |
