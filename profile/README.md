@@ -16,18 +16,18 @@ the room behind the wall.
 The pipeline is a ladder of small working systems (RFD 2136). Each
 rung is a repository you can open on its own:
 
-| Rung | What it does | Repository |
-|--:|---|---|
-| 0 | text becomes an image | (upstream, folded in by the ladder) |
-| 1 | image becomes a mesh | [interactor-pixal3d-image-to-textured-mesh](https://github.com/weftspun/interactor-pixal3d-image-to-textured-mesh) |
-| 2 | the mesh is judged | [interactor-editscore](https://github.com/weftspun/interactor-editscore) |
-| 3 | the mesh is repaired | [interactor-voxhammer-image-mesh-editing](https://github.com/weftspun/interactor-voxhammer-image-mesh-editing) |
-| 4 | the mesh is rigged | [interactor-skintokens-auto-rig](https://github.com/weftspun/interactor-skintokens-auto-rig) |
-| 5 | the parts are tagged | recovered by rungs 2 + 3 against the canonical partition |
-| 6 | the file is assembled | [interactor-shuttle](https://github.com/weftspun/spot-broker) (formerly spot-broker; RFD 2138) |
-| 7 | a pool is generated | brokered on the shuttle |
-| 8 | a stranger rolls one | served by the shuttle |
-| 9 | it is public | hosted alongside a disclosure page |
+| Rung | What it does          | Repository                                                                                                         |
+| ---: | --------------------- | ------------------------------------------------------------------------------------------------------------------ |
+|    0 | text becomes an image | (upstream, folded in by the ladder)                                                                                |
+|    1 | image becomes a mesh  | [interactor-pixal3d-image-to-textured-mesh](https://github.com/weftspun/interactor-pixal3d-image-to-textured-mesh) |
+|    2 | the mesh is judged    | [interactor-editscore](https://github.com/weftspun/interactor-editscore)                                           |
+|    3 | the mesh is repaired  | [interactor-voxhammer-image-mesh-editing](https://github.com/weftspun/interactor-voxhammer-image-mesh-editing)     |
+|    4 | the mesh is rigged    | [interactor-skintokens-auto-rig](https://github.com/weftspun/interactor-skintokens-auto-rig)                       |
+|    5 | the parts are tagged  | recovered by rungs 2 + 3 against the canonical partition                                                           |
+|    6 | the file is assembled | [interactor-shuttle](https://github.com/weftspun/spot-broker) (formerly spot-broker; RFD 2138)                     |
+|    7 | a pool is generated   | brokered on the shuttle                                                                                            |
+|    8 | a stranger rolls one  | served by the shuttle                                                                                              |
+|    9 | it is public          | hosted alongside a disclosure page                                                                                 |
 
 ## The workshop's foundations
 
