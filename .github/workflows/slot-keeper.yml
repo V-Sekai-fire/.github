@@ -1,0 +1,39 @@
+# One CI slot per repo: each repo's pipeline runs in the concurrency group slot-<repo>, which keeps one
+# waiting run and drops the others. A repo calls this on every pipeline completion (see slot/README.md);
+# when the slot is free it re-runs the most important dropped run: tags oldest version first, then the
+# newest run of the default branch, then of each open PR.
+name: slot-keeper
+
+on:
+  workflow_call:
+    inputs:
+      workflow:
+        description: The pipeline workflow's file name
+        type: string
+        default: pipeline.yml
+
+permissions: {}
+
+jobs:
+  keep:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      actions: write
+      contents: read
+      pull-requests: read
+    concurrency:
+      group: slot-keeper-${{ github.repository }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: V-Sekai-fire/.github
+          path: .slot
+          sparse-checkout: slot
+      - name: Re-run a dropped run if the slot is free
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          WORKFLOW: ${{ inputs.workflow }}
+        run: .slot/slot/keeper.sh
