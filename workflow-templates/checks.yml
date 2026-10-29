@@ -1,0 +1,48 @@
+# The org's basic Checks workflow: check out, set up the toolchain, build, test.
+# Copy it into .github/workflows/checks.yml in a repository that has no workflow,
+# then replace the Test step with that repository's real check.
+name: Checks
+
+on:
+  pull_request:
+  merge_group:
+  # A push to the default branch fills the cache a pull request run restores.
+  push:
+    branches: [$default-branch]
+  schedule:
+    # Nightly, so a defect a merge introduced is caught with no pull request open.
+    - cron: "17 5 * * *"
+
+concurrency:
+  # One run per branch: a newer pull_request run cancels the older one still
+  # running; a merge_group entry, a push or a scheduled run is never cancelled.
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      # Pinned, not floated: a toolchain bump should arrive as a diff somebody approves.
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: "29"
+          elixir-version: "1.20.4"
+      - run: mix deps.get
+      - run: mix compile
+      # `mix test` exits 0 when `test/` holds no `*_test.exs`, so a bare run reports
+      # success while testing nothing. Refuse that: a silent skip reads exactly like a
+      # pass, and an unmet precondition is a FAIL. Replace this step with the
+      # repository's real check (a gate suite, a property test, an integration run).
+      - name: Test
+        run: |
+          if [ -z "$(find test -name '*_test.exs' -print -quit 2>/dev/null)" ]; then
+            echo "::error::no test/**/*_test.exs here, so 'mix test' would pass vacuously"
+            exit 1
+          fi
+          mix test
