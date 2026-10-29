@@ -1,0 +1,6 @@
+{
+  "name": "Checks",
+  "description": "Check out, set up the toolchain, build and test on every pull request, merge-queue entry, push to the default branch, and nightly.",
+  "iconName": "octicon check",
+  "categories": ["Continuous integration", "Elixir", "Erlang"]
+}
