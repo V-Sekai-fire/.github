@@ -1,0 +1,90 @@
+{
+ "A skintokens-auto-rig (HF Space)": [
+  "V-Sekai-fire/skin-tokens-ggml",
+  "V-Sekai-fire/interactor-skintokens-guest",
+  "V-Sekai-fire/interactor-skintokens-auto-rig",
+  "V-Sekai-fire/interactor-skintokens-rig",
+  "V-Sekai-fire/entities-model-explorer",
+  "chibifire-smoke-water/interactor-usd-guest",
+  "chibifire-smoke-water/interactor-skintokens-qlora",
+  "HF:chibifire/skintokens-auto-rig",
+  "HF:chibifire/skintokens-auto-rig-web",
+  "HF:chibifire/interactor-skintokens-viewer",
+  "HF:chibifire/SkinTokens-GGUF-BF16"
+ ],
+ "B solidcraft-autobattler (HF Space)": [
+  "V-Sekai-fire/interactor-solidcraft-guest",
+  "V-Sekai-fire/godot-sandbox",
+  "V-Sekai-fire/entities-godot-sandbox-gdscript-compiler",
+  "HF:chibifire/solidcraft-autobattler",
+  "HF:chibifire/solidcraft-autobattler-web",
+  "HF:chibifire/starforged-std-3001-appendix-e"
+ ],
+ "C fabric on SQLite-over-FDB": [
+  "V-Sekai-fire/datasource-store",
+  "V-Sekai-fire/datasource-foundationdb",
+  "V-Sekai-fire/service-bao-sqlite-fdb",
+  "V-Sekai-fire/service-openbao",
+  "V-Sekai-fire/contract-zone-backend",
+  "V-Sekai-fire/interactor-fabric-zone",
+  "V-Sekai-fire/entities-multiplayer-fabric-abyssal",
+  "V-Sekai-fire/service-multiplayer-fabric-hosting",
+  "V-Sekai-fire/service-multiplayer-fabric-generate-secrets",
+  "V-Sekai-fire/service-zone",
+  "V-Sekai-fire/repository-entity-store",
+  "V-Sekai-fire/contract-entity-packet",
+  "V-Sekai-fire/multiplayer-fabric-webtransport",
+  "V-Sekai-fire/sqlite-jdbc",
+  "V-Sekai-fire/interactor-infrastructure-logbook",
+  "V-Sekai-fire/entities-multiplayer-fabric-rx"
+ ],
+ "D shared substrate (all three build on it)": [
+  "V-Sekai-fire/entities-godot",
+  "V-Sekai-fire/contract-guest-runtime",
+  "V-Sekai-fire/contract-guest-common",
+  "V-Sekai-fire/contract-ggml-rd",
+  "V-Sekai-fire/godot-vrm",
+  "V-Sekai-fire/interactor-lean-guest",
+  "V-Sekai-fire/transport-godot-mcp",
+  "V-Sekai-fire/service-godot-build",
+  "V-Sekai-fire/manuals-weftspun",
+  "chibifire-smoke-water/contract-manifest-smoke-water",
+  "chibifire-smoke-water/manuals-smoke-water",
+  "chibifire-smoke-water/contract-bootstrap-smoke-water",
+  "chibifire-smoke-water/repository-godot-double"
+ ],
+ "E pen, tray and the stage pipeline it runs": [
+  "V-Sekai-fire/transport-meshing-pen",
+  "chibifire-smoke-water/transport-tray",
+  "V-Sekai-fire/interactor-curvenet",
+  "V-Sekai-fire/interactor-lasso",
+  "V-Sekai-fire/ggml",
+  "V-Sekai-fire/interactor-mujoco-sandbox-demo",
+  "V-Sekai-fire/repository-riscv64-sysroot",
+  "V-Sekai-fire/interactor-drape",
+  "V-Sekai-fire/entities-cassie-flow-project",
+  "V-Sekai-fire/entities-sakuragaoka-station",
+  "V-Sekai-fire/entities-godot-toon-shaders",
+  "V-Sekai-fire/contract-cineform-movie-writer",
+  "V-Sekai-fire/interactor-garment-fit",
+  "V-Sekai-fire/interactor-cage",
+  "V-Sekai-fire/interactor-headfit",
+  "V-Sekai-fire/interactor-bake",
+  "V-Sekai-fire/interactor-remesh"
+ ],
+ "F xr-pilot and voice": [
+  "V-Sekai-fire/interactor-xr-pilot",
+  "V-Sekai-fire/interactor-voice"
+ ],
+ "G apparatus the work runs on": [
+  "chibifire-smoke-water/awesome-smoke-water",
+  "chibifire-smoke-water/datasource-inventory",
+  "chibifire-smoke-water/datasource-finance",
+  "chibifire-smoke-water/private-lab",
+  "chibifire-smoke-water/contract-legal"
+ ],
+ "I drawing world (operator: keep)": [
+  "chibifire-smoke-water/VRCDrawing",
+  "chibifire-smoke-water/contract-drawing-lean"
+ ]
+}
